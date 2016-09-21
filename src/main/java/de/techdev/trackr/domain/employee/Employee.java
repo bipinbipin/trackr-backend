@@ -89,6 +89,166 @@ public class Employee {
     private boolean deleted;
 
     public String fullName() {
-        return getFirstName() + " " + getLastName();
+        return this.firstName + " " + this.lastName;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public BigDecimal getSalary() {
+        return salary;
+    }
+
+    public void setSalary(BigDecimal salary) {
+        this.salary = salary;
+    }
+
+    public BigDecimal getHourlyCostRate() {
+        return hourlyCostRate;
+    }
+
+    public void setHourlyCostRate(BigDecimal hourlyCostRate) {
+        this.hourlyCostRate = hourlyCostRate;
+    }
+
+    public Date getJoinDate() {
+        return joinDate;
+    }
+
+    public void setJoinDate(Date joinDate) {
+        this.joinDate = joinDate;
+    }
+
+    public Date getLeaveDate() {
+        return leaveDate;
+    }
+
+    public void setLeaveDate(Date leaveDate) {
+        this.leaveDate = leaveDate;
+    }
+
+    public FederalState getFederalState() {
+        return federalState;
+    }
+
+    public void setFederalState(FederalState federalState) {
+        this.federalState = federalState;
+    }
+
+    public Float getVacationEntitlement() {
+        return vacationEntitlement;
+    }
+
+    public void setVacationEntitlement(Float vacationEntitlement) {
+        this.vacationEntitlement = vacationEntitlement;
+    }
+
+    public List<WorkTime> getWorkTimes() {
+        return workTimes;
+    }
+
+    public void setWorkTimes(List<WorkTime> workTimes) {
+        this.workTimes = workTimes;
+    }
+
+    public List<BillableTime> getBillableTimes() {
+        return billableTimes;
+    }
+
+    public void setBillableTimes(List<BillableTime> billableTimes) {
+        this.billableTimes = billableTimes;
+    }
+
+    public List<VacationRequest> getVacationRequests() {
+        return vacationRequests;
+    }
+
+    public void setVacationRequests(List<VacationRequest> vacationRequests) {
+        this.vacationRequests = vacationRequests;
+    }
+
+    public List<VacationRequest> getApprovedRequests() {
+        return approvedRequests;
+    }
+
+    public void setApprovedRequests(List<VacationRequest> approvedRequests) {
+        this.approvedRequests = approvedRequests;
+    }
+
+    public List<Report> getTravelExpenseReports() {
+        return travelExpenseReports;
+    }
+
+    public void setTravelExpenseReports(List<Report> travelExpenseReports) {
+        this.travelExpenseReports = travelExpenseReports;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }

@@ -1,6 +1,8 @@
 package de.techdev.trackr.core.mail.support;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Profile;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -15,6 +17,8 @@ import java.util.Arrays;
 @Profile("!gmail")
 @Component("mailSender")
 public class NoOpJavaMailSender implements JavaMailSender {
+
+    Logger log = LoggerFactory.getLogger(NoOpJavaMailSender.class);
 
     @Override
     public MimeMessage createMimeMessage() {
